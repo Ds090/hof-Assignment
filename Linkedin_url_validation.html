@@ -1,0 +1,43 @@
+<!-- As a developer, you want to create a program that validates LinkedIn profile URLs to ensure that they are
+formatted correctly and contain only valid characters. Valid LinkedIn profile URLs should start with https://
+www.linkedin.com/in/ followed by a combination of one or more letters, digits, underscores, or hyphens, and
+end with a letter or digit. The length of the profile ID should be between 5 and 30 characters.
+The program should use a regular expression to match valid LinkedIn profile URLs, and should not match URLs
+that do not follow this format or contain invalid characters. The program should provide clear output messages
+indicating whether each input is a valid LinkedIn profile URL or not. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css">
+    <title>URL_Validation</title>
+</head>
+<body class="bg-gradient-to-r from-black via-purple-500 to-gray-800">
+     <h1 class=" text-2xl font-bold text-center from-slate-900 to-white animate-bounce ">Linkedin URL Validation</h1>
+     <div class="border border-black w-[100%]"></div>
+     <section class=" bg-gradient-to-r  from-black via-purple-500 to-gray-800 w-full h-screen flex flex-col justify-center items-center ">
+    <div class="h-[300px] w-[500px] pl-4 flex justify-start items-center bg-[rgba(255,255,255,0.48)] rounded hover:shadow-lg hover:shadow-lime-200 transition ease-in-out delay-150 duration-300">
+       
+        <form class="space-x-1 space-y-5">
+        <label class="text-lg font-semibold relative">URL:</label>
+        <input type="text" id="Url_Input" class="border border-black w-[420px] h-8 rounded shadow shadow-black text-lg font-semibold relative">
+        <div id="output" class="text-lg font-semibold relative text-center rounded"></div>
+
+        <div class="flex items-center justify-center h-auto w-auto space-x-4"><button onclick="URLValidation()" type="button" class="py-2 px-9 bg-purple-800 rounded-l-full text-lg font-semibold text-white hover:bg-white hover:shadow-md hover:shadow-black hover:text-black focus:outline-none focus:ring focus:ring-violet-700 focus:border-none focus:shadow-lg focus:shadow-violet-500 transition ease-in-out delay-150 duration-300">Submit</button>
+        
+            <button type="button" class="py-2 px-9 bg-black rounded-l-full text-lg font-semibold text-white hover:bg-white hover:shadow-md hover:shadow-black hover:text-black focus:outline-none focus:ring focus:ring-white focus:border-none focus:shadow-lg focus:shadow-black transition ease-in-out delay-150 duration-300" onclick="Reset()">Reset</button>
+        </div>
+
+        
+</form>
+    </div>
+</section>
+    <script src="./URL_Validation_Linkedin.js"></script>
+</body>
+</html>

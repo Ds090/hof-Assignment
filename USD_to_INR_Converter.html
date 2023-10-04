@@ -1,0 +1,40 @@
+<!-- Suppose a store has a list of items and their prices in US Dollars stored as an object. Create a JavaScript
+program to convert the prices to Indian Rupees using an exchange rate of 1 USD to 80 INR. The program should
+use the map higher-order function to create a new object with the converted prices in Rupees. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="New1.css">
+    <!--Font  -->
+    <script src="https://kit.fontawesome.com/c6b328b2de.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full h-screen flex justify-center items-center bg-gradient-to-t from-blue-500 to-blue-600 ">
+    <div class="bg-gray-300 h-[300px] w-[500px] flex
+    justify-center items-center rounded-xl md:w-[600px] shadow-lg shadow-black">
+        <form class="space-y-3 space-x-2 h-auto w-auto" >
+        <h1 class="relative left-14 bottom-5 text-2xl font-bold">Convert USD to INR</h1>
+        <label class="text-2xl font-semibold">From:</label>
+        <input type="text" id="input_num" class="h-9 border border-black rounded shadow shadow-black font-bold">
+        <span class=" text-end font-bold">USD</span><br>
+        <i class="fa-solid fa-arrows-up-down relative bottom-6 left-[310px]"></i>
+        <label class="text-2xl font-semibold">To:</label>
+        <input type="text" id="update_box" class="h-9 border border-black rounded shadow shadow-black font-bold">
+        <span class=" text-end font-bold">INR</span><br>
+
+        <div class="space-x-8"><input type="button" value="Convert" class="text-center py-2 px-12 border border-green-800 rounded text-xl shadow-md shadow-black hover:bg-white hover:text-green-800 hover:font-semibold bg-green-800 text-white cursor-pointer" id="Convert" onclick="Convert_INR()"></input>
+
+        <button class="text-center py-2 px-12 border border-green-800 rounded text-xl shadow-md shadow-black hover:bg-white hover:text-green-800 hover:font-semibold bg-green-800 text-white" id="Clear">Clear</button></div>
+        </form>
+    </div>
+</div>
+
+<script src="./USD_to_INR.js"></script>
+</body>
+</html>
